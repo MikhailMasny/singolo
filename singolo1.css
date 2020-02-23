@@ -89,3 +89,59 @@ header {
 .nav__link:hover {
     color: #f06c64;
 }
+
+.carousel {
+    height: 600px;
+    background-color: #f06c64;
+    border-bottom: solid 6px #ea676b;
+}
+
+.carousel__wrapper {
+    position: relative;
+}
+
+.carousel__list {
+    display: flex;
+}
+
+.carousel__vertical {
+    padding: 53px 0 0 72px;
+}
+
+.carousel__horizontal {
+    padding: 174px 0 0 73px;
+
+}
+
+.carousel__item {
+    position: absolute;
+    top: 52%;
+    cursor: pointer;
+}
+
+.carousel__item_left {
+    left: 2px;
+}
+
+.carousel__item_right {
+    right: 0;
+}
+
+.carousel__object {
+    display: inline-block;
+    width: 16px;
+    height: 27px;
+    opacity: 50%;
+}
+
+.carousel__object_left {
+    background-image: url(/assets/images/left.png);
+}
+
+.carousel__object_right {
+    background-image: url(/assets/images/right.png);
+}
+.carousel__object_right:hover,
+.carousel__object_left:hover {
+    opacity: 100%;
+}
