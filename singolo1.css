@@ -131,7 +131,6 @@ header {
     display: inline-block;
     width: 16px;
     height: 27px;
-    opacity: 50%;
 }
 
 .carousel__object_left {
@@ -143,7 +142,7 @@ header {
 }
 .carousel__object_right:hover,
 .carousel__object_left:hover {
-    opacity: 100%;
+    opacity: 0.5;
 }
 
 /* SERVICES */
