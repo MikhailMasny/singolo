@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="singolo1.css">
-    <title>Singolo</title>
+    <title>Singolo 1</title>
 </head>
-
 <body>
-    <header>
+    <header class="header">
         <div class="wrapper">
-            <div class="header">
+            <div class="header__wrapper header__wrapper-indent">
                 <h1 class="logo">Singolo<span>*</span></h1>
                 <nav>
                     <ul class="nav">
                         <li class="nav__item">
-                            <a class="nav__link nav__link_active" href="#">home</a>
+                            <a class="nav__link nav__item-indent nav__link_active" href="#">home</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">services</a>
+                            <a class="nav__link nav__item-indent" href="#">services</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">portfolio</a>
+                            <a class="nav__link nav__item-indent" href="#">portfolio</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">about</a>
+                            <a class="nav__link nav__item-indent" href="#">about</a>
                         </li>
-                        <li class="nav__item-last">
-                            <a class="nav__link" href="#">contact</a>
+                        <!-- TODO: fix it -->
+                        <li class="nav__item"> 
+                            <a class="nav__link nav__item-indent" href="#">contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
     <section class="carousel">
         <div class="wrapper">
             <div class="carousel__wrapper">
@@ -61,71 +59,60 @@
             </div>
         </div>
     </section>
-
     <section class="services">
         <div class="wrapper">
             <div class="services__wrapper">
-
-                <h2 class="services__title">Our Services</h2>
-                <p class="services__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-                    mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-
-                <div class="services__list">
-                    <div class="services__content">
-                        <div class="services__logo">
+                <div class="services__info">
+                    <h2 class="services__title services__title-main">Our Services</h2>
+                    <p class="services__text services__text-main">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>            
+                <div class="services__list services__list-indent">
+                    <div class="services__content services__content-indent">
+                        <a class="footer__icon footer__icon_facebook" href="#"></a>
+                        <div class="services__icon">
                             <img src="/assets/images/pen.png" alt="pen">
                         </div>
-                        <h3 class="services__specification">Custom Design</h3>
-                        <p class="services__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        <h3 class="services__title services__title-specification">Custom Design</h3>
+                        <p class="services__text services__text-small">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     </div>
-        
-                    <div class="services__content">
-                        <div class="services__logo">
+                    <div class="services__content services__content-indent">
+                        <div class="services__icon">
                             <img src="/assets/images/bulb.png" alt="bulb">
                         </div>
-                        <h3 class="services__specification">Inovative Ideas</h3>
-                        <p class="services__text">Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        <h3 class="services__title services__title-specification">Inovative Ideas</h3>
+                        <p class="services__text services__text-small">Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     </div>
-        
-                    <div class="services__content">
-                        <div class="services__logo">
+                    <div class="services__content services__content-indent">
+                        <div class="services__icon">
                             <img src="/assets/images/heart.png" alt="heart">
                         </div>
-                        <h3 class="services__specification">Love Is The Answer</h3>
-                        <p class="services__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        <h3 class="services__title services__title-specification">Love Is The Answer</h3>
+                        <p class="services__text services__text-small">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     </div>
-
-                    <div class="services__content">
-                        <div class="services__logo">
+                    <div class="services__content services__content-indent">
+                        <div class="services__icon">
                             <img src="/assets/images/phone.png" alt="phone">
                         </div>
-                        <h3 class="services__specification">Responsive Layout</h3>
-                        <p class="services__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.</p>
+                        <h3 class="services__title services__title-specification">Responsive Layout</h3>
+                        <p class="services__text services__text-small">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.</p>
                     </div>
-        
-                    <div class="services__content">
-                        <div class="services__logo">
+                    <div class="services__content services__content-indent">
+                        <div class="services__icon">
                             <img src="/assets/images/bubble.png" alt="bubble">
                         </div>
-                        <h3 class="services__specification">24 / 7 Support</h3>
-                        <p class="services__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat Pellen-tesque egestas venenatis lorem .</p>
+                        <h3 class="services__title services__title-specification">24 / 7 Support</h3>
+                        <p class="services__text services__text-small">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat Pellen-tesque egestas venenatis lorem .</p>
                     </div>
-        
-                    <div class="services__content">
-                        <div class="services__logo">
+                    <div class="services__content services__content-indent">
+                        <div class="services__icon">
                             <img src="/assets/images/star.png" alt="star">
                         </div>
-                        <h3 class="services__specification">Feel Like A Star</h3>
-                        <p class="services__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        <h3 class="services__title services__title-specification">Feel Like A Star</h3>
+                        <p class="services__text services__text-small">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                     </div>
-                    
                 </div>
             </div>  
         </div>
-
     </section>
-
 </body>
-
 </html>

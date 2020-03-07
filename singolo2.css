@@ -98,14 +98,6 @@ button {
     flex-wrap: wrap;
   }
 
-  @media screen and (max-width: 520px) {
-    .portfolio__pictures {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  }
-
   .portfolio__picture-indent {
     padding-top: 18px;
   }
@@ -211,3 +203,13 @@ button {
   .about-us__icon_linkedin {
     background-image: url("assets/images/linkedin.svg");
   }
+
+/* MOBILE */
+
+@media screen and (max-width: 520px) {
+  .portfolio__pictures {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
