@@ -40,7 +40,7 @@ button {
 
 .portfilio__wrapper {
   padding-top: 70px;
-  padding-bottom: 48px;
+  padding-bottom: 66px;
 }
 
 .portfolio__title {
@@ -96,6 +96,8 @@ button {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 621px;
+    overflow: hidden;
   }
 
   .portfolio__picture-indent {
@@ -189,19 +191,19 @@ button {
   }
   
   .about-us__icon_facebook {
-    background-image: url("assets/images/facebook.svg");
+    background-image: url("assets/images/social-icons/facebook.svg");
   }
   
   .about-us__icon_google-plus {
-    background-image: url("assets/images/google-plus.svg");
+    background-image: url("assets/images/social-icons/google-plus.svg");
   }
   
   .about-us__icon_twitter {
-    background-image: url("assets/images/twitter.svg");
+    background-image: url("assets/images/social-icons/twitter.svg");
   }
   
   .about-us__icon_linkedin {
-    background-image: url("assets/images/linkedin.svg");
+    background-image: url("assets/images/social-icons/linkedin.svg");
   }
 
 /* MOBILE */

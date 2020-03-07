@@ -160,17 +160,17 @@ body {
 }
 
 .contact__detail-place {
-    list-style-image: url('/assets/images/location.png');
+    list-style-image: url("assets/images/contact-icons/location.png");
     margin-left: -1px;
 }
 
 .contact__detail-mobile {
-    list-style-image: url('/assets/images/mobile.png');
+    list-style-image: url("assets/images/contact-icons/mobile.png");
     margin-left: 1px;
 }
 
 .contact__detail-mail {
-    list-style-image: url('/assets/images/mail.png');
+    list-style-image: url("assets/images/contact-icons/mail.png");
     margin-left: 2px;
 }
 
@@ -214,17 +214,17 @@ body {
 }
   
 .footer__icon_facebook {
-    background-image: url("assets/images/facebook.svg");
+    background-image: url("assets/images/social-icons/facebook.svg");
 }
   
 .footer__icon_google-plus {
-    background-image: url("assets/images/google-plus.svg");
+    background-image: url("assets/images/social-icons/google-plus.svg");
 }
   
 .footer__icon_twitter {
-    background-image: url("assets/images/twitter.svg");
+    background-image: url("assets/images/social-icons/twitter.svg");
 }
   
 .footer__icon_linkedin {
-    background-image: url("assets/images/linkedin.svg");
+    background-image: url("assets/images/social-icons/linkedin.svg");
 }

@@ -144,11 +144,11 @@ body {
 }
 
 .carousel__object_left {
-    background-image: url(/assets/images/left.png);
+    background-image: url("assets/images/carousel/left.png");
 }
 
 .carousel__object_right {
-    background-image: url(/assets/images/right.png);
+    background-image: url("assets/images/carousel/right.png");
 }
 .carousel__object_right:hover,
 .carousel__object_left:hover {
