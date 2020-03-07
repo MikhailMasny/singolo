@@ -625,6 +625,7 @@ body {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      height: auto;
     }
   }
 
