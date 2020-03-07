@@ -34,29 +34,37 @@ button {
 /* PORTFOLIO */
 
 .portfolio {
-    padding-top: 60px;
-    padding-bottom: 67px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
   }
 
-  .portfolio__title {
-    font-weight: 900;
-    font-size: 29.6188px;
-    line-height: 18px;
-    color: #666d89;
+.portfilio__wrapper {
+  padding-top: 70px;
+  padding-bottom: 48px;
+}
+
+.portfolio__title {
+  font-weight: 900;
+  font-size: 29px;
+  line-height: 18px;
+  color: #666d89;
+  letter-spacing: 1px;
+}
+
+  .portfolio__title-indent {
+    padding-bottom: 25px;
   }
 
   .portfolio__text {
-    margin-top: 25px;
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
+    letter-spacing: -0.2px;
   }
   
   .portfolio__tags {
-    margin-top: 17px;
+    padding-top: 12px;
   }
   
   .portfolio__tag {
@@ -66,8 +74,11 @@ button {
     color: #767e9e;
     box-sizing: border-box;
     border-radius: 5px;
+    padding: 2px 6px;
+  }
+
+  .portfolio__tag-indent {
     margin-right: 7px;
-    padding: 4px 7px;
   }
   
   .portfolio__tag:hover {
@@ -82,46 +93,72 @@ button {
   }
   
   .portfolio__pictures {
-    margin-top: 17px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
-  .portfolio__picture {
-    margin-bottom: 20px;
+
+  @media screen and (max-width: 520px) {
+    .portfolio__pictures {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .portfolio__picture-indent {
+    padding-top: 18px;
   }
   
-  .portfolio__picture:last-child {
-    margin-bottom: 0;
+  .portfolio__picture {
+    padding-bottom: 20px;
   }
 
   /* ABOUT US */
 
   .about-us {
-    padding-top: 59px;
-    padding-bottom: 67px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
   }
 
-  .about-us__info {
-      margin-bottom: 55px;
+  .about-us__wrapper {
+    padding-top: 68px;
   }
 
   .about-us__title {
     font-weight: 900;
-    font-size: 29.6188px;
-    line-height: 18px;
     color: #666d89;
+    letter-spacing: 1px;
+  }
+
+  .about-us__title-main {
+    padding-bottom: 26px;
+    font-size: 29px;
+    line-height: 18px;
+  }
+
+  .about-us__title-employee {
+    padding-top: 14px;
+    font-size: 17px;
+    line-height: 18px;
   }
 
   .about-us__text {
-    margin-top: 25px;
+    color: #767e9e;
+    text-align: justify;
+  }
+
+  .about-us__text-main {  
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
-    color: #767e9e;
+  }
+
+  .about-us__text-employee {
+    padding-top: 12px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .about-us__employees {
@@ -130,34 +167,23 @@ button {
     flex-wrap: wrap;
   }
 
+  .about-us__employees-indent {
+    padding-top: 46px;
+  }
+
   .about-us__employee {
     width: 300px;
-  }
-  
-  .about-us__emp-title {
-    margin-top: 17px;
-    font-weight: 900;
-    font-size: 17.7713px;
-    line-height: 18px;
-    color: #666d89;
-  }
-  
-  .about-us__emp-text {
-    margin-top: 13px;
-    font-weight: normal;
-    font-size: 12px;
-    color: #767e9e;
+    padding-bottom: 54px;
   }
 
   .about-us__social-icons {
-    margin-top: 27px;
-    padding-left: 1px;
+    padding-top: 24px;
   }
   
   .about-us__icon {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     border: 1px solid #666D89;
     box-sizing: border-box;
     border-radius: 50%;
