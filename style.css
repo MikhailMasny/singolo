@@ -93,7 +93,7 @@ body {
     color: #fff;
 }
 
-.nav__link_active,
+.nav__link-active,
 .nav__link:hover {
     color: #f06c64;
 }
@@ -129,11 +129,11 @@ body {
     cursor: pointer;
 }
 
-.carousel__item_left {
+.carousel__item-left {
     left: 2px;
 }
 
-.carousel__item_right {
+.carousel__item-right {
     right: 0;
 }
 
@@ -143,15 +143,15 @@ body {
     height: 27px;
 }
 
-.carousel__object_left {
+.carousel__object-left {
     background-image: url("assets/images/carousel/left.png");
 }
 
-.carousel__object_right {
+.carousel__object-right {
     background-image: url("assets/images/carousel/right.png");
 }
-.carousel__object_right:hover,
-.carousel__object_left:hover {
+.carousel__object-right:hover,
+.carousel__object-left:hover {
     opacity: 0.5;
 }
 
@@ -291,7 +291,7 @@ body {
     border-color: #c5c5c5;
 }
 
-.portfolio__tag_selected {
+.portfolio__tag-selected {
     color: #c5c5c5;
     border-color: #c5c5c5;
     cursor: default;
@@ -395,19 +395,19 @@ body {
     opacity: 0.5;
 }
 
-.about-us__icon_facebook {
+.about-us__icon-facebook {
     background-image: url("assets/images/social-icons/facebook.svg");
 }
 
-.about-us__icon_google-plus {
+.about-us__icon-google-plus {
     background-image: url("assets/images/social-icons/google-plus.svg");
 }
 
-.about-us__icon_twitter {
+.about-us__icon-twitter {
     background-image: url("assets/images/social-icons/twitter.svg");
 }
 
-.about-us__icon_linkedin {
+.about-us__icon-linkedin {
     background-image: url("assets/images/social-icons/linkedin.svg");
 }
 
@@ -602,19 +602,19 @@ body {
     opacity: 0.5;
 }
   
-.footer__icon_facebook {
+.footer__icon-facebook {
     background-image: url("assets/images/social-icons/facebook.svg");
 }
   
-.footer__icon_google-plus {
+.footer__icon-google-plus {
     background-image: url("assets/images/social-icons/google-plus.svg");
 }
   
-.footer__icon_twitter {
+.footer__icon-twitter {
     background-image: url("assets/images/social-icons/twitter.svg");
 }
   
-.footer__icon_linkedin {
+.footer__icon-linkedin {
     background-image: url("assets/images/social-icons/linkedin.svg");
 }
 
