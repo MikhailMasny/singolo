@@ -124,7 +124,22 @@ body {
 
 .carousel__horizontal {
     padding: 174px 0 0 73px;
+}
 
+.carousel__mobile-v {
+    position: absolute;
+    top: 118px;
+    left: 86px;
+}
+
+.carousel__mobile-h {
+    position: absolute;
+    top: 188px;
+    right: 162px;
+}
+
+.carousel__display-hidden {
+    display: none;
 }
 
 .carousel__element {

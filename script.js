@@ -142,3 +142,22 @@ function handlerCarousel() {
         CAROUSEL_WRAPPER.style.padding = "0px 0px 41px 0px";
     }
 }
+
+/* Task: Slider. Activating Phone Screens */
+
+const MOBILE_V_DISPLAY = document.querySelector("img.carousel__mobile-v");
+const MOBILE_H_DISPLAY = document.querySelector("img.carousel__mobile-h");
+
+const MOBILE_V = document.getElementById("mobile_v");
+const MOBILE_H = document.getElementById("mobile_h");
+
+MOBILE_V.addEventListener("click", handlerMobileV);
+MOBILE_H.addEventListener("click", handlerMobileH);
+
+function handlerMobileV() {
+    MOBILE_V_DISPLAY.classList.toggle("carousel__display-hidden");
+}
+
+function handlerMobileH() {
+    MOBILE_H_DISPLAY.classList.toggle("carousel__display-hidden");
+}
