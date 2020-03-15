@@ -101,17 +101,21 @@ body {
 /* CAROUSEL */
 
 .carousel {
-    height: 600px;
     background-color: #f06c64;
     border-bottom: solid 6px #ea676b;
 }
 
 .carousel__wrapper {
     position: relative;
+    padding-bottom: 55px;
 }
 
-.carousel__list {
+.carousel__item {
     display: flex;
+}
+
+.carousel__item-hidden {
+    display: none;
 }
 
 .carousel__vertical {
@@ -123,17 +127,17 @@ body {
 
 }
 
-.carousel__item {
+.carousel__element {
     position: absolute;
-    top: 52%;
+    top: 281px;
     cursor: pointer;
 }
 
-.carousel__item-left {
+.carousel__element-left {
     left: 2px;
 }
 
-.carousel__item-right {
+.carousel__element-right {
     right: 0;
 }
 

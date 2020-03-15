@@ -114,3 +114,31 @@ function handlerPicture(event) {
 
     event.target.classList.add("portfolio__picture-selected");
 }
+
+/* Task: Slider. Slide switch */
+
+const CAROUSEL_SECTION = document.querySelector(".carousel");
+const CAROUSEL_WRAPPER = document.querySelector(".carousel__wrapper");
+const CAROUSEL = document.querySelector(".carousel__list");
+
+const PREV = document.querySelector(".carousel__object-left");
+const NEXT = document.querySelector(".carousel__object-right");
+
+PREV.addEventListener("click", handlerCarousel);
+NEXT.addEventListener("click", handlerCarousel);
+
+function handlerCarousel() {
+    if (CAROUSEL.childNodes[1].classList.contains("carousel__item-hidden")) {
+        CAROUSEL.childNodes[1].classList.remove("carousel__item-hidden");
+        CAROUSEL.childNodes[3].classList.add("carousel__item-hidden");
+        
+        CAROUSEL_SECTION.style.background = "#F06C64";
+        CAROUSEL_WRAPPER.style.padding = "0px 0px 55px 0px";
+    } else {
+        CAROUSEL.childNodes[3].classList.remove("carousel__item-hidden");
+        CAROUSEL.childNodes[1].classList.add("carousel__item-hidden");
+
+        CAROUSEL_SECTION.style.background = "#648BF0";
+        CAROUSEL_WRAPPER.style.padding = "0px 0px 41px 0px";
+    }
+}
