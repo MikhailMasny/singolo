@@ -313,12 +313,16 @@ body {
     padding-top: 20px;
 }
 
-.portfolio__picture {
-    padding-bottom: 20px;
+.portfolio__item {
+    padding-bottom: 17px;
 }
 
 .portfolio__picture-ordered {
     order: -1;
+}
+
+.portfolio__picture-selected {
+    border: 5px solid #F06C64;
 }
 
 /* ABOUT US */

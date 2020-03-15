@@ -43,7 +43,7 @@ function getQuote() {
 
 /* Task: Portfolio. Tab Switching */
 
-const PICTURES = document.querySelectorAll(".portfolio__picture");
+const PICTURES = document.querySelectorAll(".portfolio__item");
 
 const TABS = document.querySelector(".portfolio__tags");
 TABS.addEventListener("click", handlerPortfolio);
@@ -54,8 +54,7 @@ function removePictureClasses() {
     });
 }
 
-function selectPictures(...pictures) {
-
+function orderPictures(...pictures) {
     pictures.forEach(picture => {
         let element = document.getElementById(picture);
         element.classList.add("portfolio__picture-ordered");
@@ -63,6 +62,10 @@ function selectPictures(...pictures) {
 }
 
 function handlerPortfolio(event) {
+    if (event.target.classList.contains("portfolio__tags")) {
+        return;
+    }
+
     TABS.querySelectorAll(".portfolio__tag").forEach(element => {
         element.classList.remove("portfolio__tag-selected");
     });
@@ -75,16 +78,39 @@ function handlerPortfolio(event) {
     
     if (event.target.name === "web-design") {
         removePictureClasses();
-        selectPictures("portfolio-picture-6", "portfolio-picture-10", "portfolio-picture-12");
+        orderPictures("portfolio-picture-6", "portfolio-picture-10", "portfolio-picture-12");
     }
 
     if (event.target.name === "graphic-design") {
         removePictureClasses();
-        selectPictures("portfolio-picture-2", "portfolio-picture-7", "portfolio-picture-8", "portfolio-picture-11");
+        orderPictures("portfolio-picture-2", "portfolio-picture-7", "portfolio-picture-8", "portfolio-picture-11");
     }
 
     if (event.target.name === "artwork") {
         removePictureClasses();
-        selectPictures("portfolio-picture-1", "portfolio-picture-3", "portfolio-picture-4", "portfolio-picture-5", "portfolio-picture-9");
+        orderPictures("portfolio-picture-1", "portfolio-picture-3", "portfolio-picture-4", "portfolio-picture-5", "portfolio-picture-9");
     }
+}
+
+/* Task: Portfolio. Image Interaction */
+
+const PORTFOLIO = document.querySelector(".portfolio__pictures");
+PORTFOLIO.addEventListener("click", handlerPicture);
+
+function handlerPicture(event) {
+    if (event.target.classList.contains("portfolio__pictures")) {
+        return;
+    }
+
+    PORTFOLIO.querySelectorAll(".portfolio__picture").forEach(element => {
+        element.classList.remove("portfolio__picture-selected");
+        
+        element.width = 220;
+        element.height = 187;
+    });
+    
+    event.target.width = 220;
+    event.target.height = 187;
+
+    event.target.classList.add("portfolio__picture-selected");
 }
