@@ -133,20 +133,18 @@ function handlerCarousel() {
         CAROUSEL.childNodes[3].classList.add("carousel__item-hidden");
         
         CAROUSEL_SECTION.style.background = "#F06C64";
-        CAROUSEL_WRAPPER.style.padding = "0px 0px 55px 0px";
     } else {
         CAROUSEL.childNodes[3].classList.remove("carousel__item-hidden");
         CAROUSEL.childNodes[1].classList.add("carousel__item-hidden");
 
         CAROUSEL_SECTION.style.background = "#648BF0";
-        CAROUSEL_WRAPPER.style.padding = "0px 0px 41px 0px";
     }
 }
 
 /* Task: Slider. Activating Phone Screens */
 
-const MOBILE_V_DISPLAY = document.querySelector("img.carousel__mobile-v");
-const MOBILE_H_DISPLAY = document.querySelector("img.carousel__mobile-h");
+const MOBILE_V_DISPLAY = document.querySelector("img.mobile__vertical-display");
+const MOBILE_H_DISPLAY = document.querySelector("img.mobile__horizontal-display");
 
 const MOBILE_V = document.getElementById("mobile_v");
 const MOBILE_H = document.getElementById("mobile_h");

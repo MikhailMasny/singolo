@@ -112,30 +112,61 @@ body {
 
 .carousel__item {
     display: flex;
+    height: 539px;
 }
 
 .carousel__item-hidden {
     display: none;
 }
 
-.carousel__vertical {
+.mobile__vertical {
     padding: 53px 0 0 72px;
 }
 
-.carousel__horizontal {
+.mobile__horizontal {
     padding: 174px 0 0 73px;
 }
 
-.carousel__mobile-v {
+.mobile__vertical-shadow {
+    position: absolute;
+    top: 53px;
+    left: 72px;
+    z-index: 1;
+}
+
+.mobile__vertical-body {
+    position: absolute;
+    top: 53px;
+    left: 72px;
+    z-index: 2;
+}
+
+.mobile__vertical-display {
     position: absolute;
     top: 118px;
     left: 86px;
+    z-index: 3;
 }
 
-.carousel__mobile-h {
+.mobile__horizontal-shadow {
+    position: absolute;
+    top: 174px;
+    right: 72px;
+    z-index: 1;
+}
+
+.mobile__horizontal-body {
+    position: absolute;
+    top: 174px;
+    right: 97px;
+    z-index: 2;
+}
+
+.mobile__horizontal-display {
     position: absolute;
     top: 188px;
     right: 162px;
+    z-index: 3;
 }
 
 .carousel__display-hidden {
