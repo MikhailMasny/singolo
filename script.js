@@ -40,3 +40,51 @@ function getQuote() {
 
     alert(`The letter was sent\nSubject: ${subject}\nDescription: ${describe}`);
 }
+
+/* Task: Portfolio. Tab Switching */
+
+const PICTURES = document.querySelectorAll(".portfolio__picture");
+
+const TABS = document.querySelector(".portfolio__tags");
+TABS.addEventListener("click", handlerPortfolio);
+
+function removePictureClasses() {
+    PICTURES.forEach(element => {
+        element.classList.remove("portfolio__picture-ordered");
+    });
+}
+
+function selectPictures(...pictures) {
+
+    pictures.forEach(picture => {
+        let element = document.getElementById(picture);
+        element.classList.add("portfolio__picture-ordered");
+    });
+}
+
+function handlerPortfolio(event) {
+    TABS.querySelectorAll(".portfolio__tag").forEach(element => {
+        element.classList.remove("portfolio__tag-selected");
+    });
+
+    event.target.classList.add("portfolio__tag-selected");
+
+    if (event.target.name === "all") {
+        removePictureClasses();
+    }
+    
+    if (event.target.name === "web-design") {
+        removePictureClasses();
+        selectPictures("portfolio-picture-6", "portfolio-picture-10", "portfolio-picture-12");
+    }
+
+    if (event.target.name === "graphic-design") {
+        removePictureClasses();
+        selectPictures("portfolio-picture-2", "portfolio-picture-7", "portfolio-picture-8", "portfolio-picture-11");
+    }
+
+    if (event.target.name === "artwork") {
+        removePictureClasses();
+        selectPictures("portfolio-picture-1", "portfolio-picture-3", "portfolio-picture-4", "portfolio-picture-5", "portfolio-picture-9");
+    }
+}

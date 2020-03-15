@@ -245,6 +245,10 @@ body {
   padding-bottom: 67px;
 }
 
+.portfolio__info {
+    padding-bottom: 10px;
+}
+
 .portfolio__title {
   font-weight: 900;
   font-size: 29px;
@@ -266,7 +270,7 @@ body {
 }
 
 .portfolio__tags {
-    padding-top: 10px;
+    display: inline-block;
 }
 
 .portfolio__tag {
@@ -311,6 +315,10 @@ body {
 
 .portfolio__picture {
     padding-bottom: 20px;
+}
+
+.portfolio__picture-ordered {
+    order: -1;
 }
 
 /* ABOUT US */
