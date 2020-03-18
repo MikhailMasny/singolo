@@ -169,6 +169,10 @@ body {
     z-index: 3;
 }
 
+.mobile__slide-another {
+    width: 940px;
+}
+
 .carousel__display-hidden {
     display: none;
 }
@@ -680,31 +684,77 @@ body {
     background-image: url("assets/images/social-icons/linkedin.svg");
 }
 
-/* MOBILE */
+/* TABS */
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
+    
+    .carousel__item {
+        height: 458px;
+    }
+
+    .carousel__wrapper {
+        padding-bottom: 23px;
+    }
+
+    .carousel__element {
+        top: 242px;
+    }
+
+    .mobile__vertical-shadow {
+        width: 201px;
+        left: 45px;
+    }
+
+    .mobile__vertical-body {
+        top: 53px;
+        left: 45px;
+        width: 180px;
+    }
+
+    .mobile__vertical-display {
+        width: 157px;
+        top: 107px;
+        left: 57px;
+    }
+
+    .mobile__horizontal-shadow {
+        width: 366px;
+        right: 45px;
+    }
+
+    .mobile__horizontal-body {
+        width: 344px;
+        right: 45px;
+    }
+
+    .mobile__horizontal-display {
+        width: 250px;
+        top: 184px;
+        right: 94px;
+    }
+
+    .mobile__slide-another {
+        width: 690px;
+        height: 450px;
+    }
+
     .portfolio__pictures {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      height: auto;
-    }
-  }
-
-@media screen and (max-width: 560px) {
-    .nav {
-        display: none;
+        height: 828px;
     }
 
-    .services__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .about-us__employee {
+        width: 219px;
     }
-}
 
-@media screen and (max-width: 1024px) {
-    .carousel {
-        display: none;
+    .about-us__photo {
+        width: 218px;
+    }
+
+    .contact__action {
+        width: 442px;
+    }
+
+    .contact__info {
+        width: 221px;
     }
 }
