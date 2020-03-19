@@ -742,10 +742,7 @@ body {
         height: 828px;
     }
 
-    .about-us__employee {
-        width: 219px;
-    }
-
+    .about-us__employee,
     .about-us__photo {
         width: 218px;
     }
@@ -756,5 +753,111 @@ body {
 
     .contact__info {
         width: 221px;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 375px) {
+
+    nav {
+        display: none;
+    }
+
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    .portfolio__pictures {
+        height: 868px;
+    }
+
+    .portfolio__item { 
+        padding-bottom: 13px;
+    }
+
+    .portfolio__picture {
+        width: 151px;
+        height: 128px;
+    }
+
+    .about-us__employee {
+        width: 314px;
+    }
+
+    .about-us__employee,
+    .about-us__photo {
+        width: 314px;
+    }
+
+    .contact__action,
+    .contact__info {
+        width: 100%;
+    }
+
+    .contact__action-indent,
+    .contact__info-indent {
+        padding-top: 32px;
+    }
+    
+    .carousel__item {
+        height: 250px;
+    }
+
+    .carousel__wrapper {
+        padding-bottom: 23px;
+    }
+
+    .carousel__element {
+        top: 121px;
+    }
+
+    .carousel__element-left {
+        left: -15px;
+    }
+
+    .carousel__element-right {
+        right: -12px;
+    }
+
+    .mobile__vertical-shadow {
+        width: 90px;
+        left: 21px;
+    }
+
+    .mobile__vertical-body {
+        top: 53px;
+        left: 21px;
+        width: 80px;
+    }
+
+    .mobile__vertical-display {
+        width: 69px;
+        top: 78px;
+        left: 27px;
+    }
+
+    .mobile__horizontal-shadow {
+        width: 179px;
+        top: 94px;
+        right: 18px;
+    }
+
+    .mobile__horizontal-body {
+        width: 168px;
+        top: 94px;
+        right: 29px;
+    }
+
+    .mobile__horizontal-display {
+        width: 122px;
+        top: 99px;
+        right: 53px;
+    }
+
+    .mobile__slide-another {
+        margin: auto;
+        width: 318px;
+        height: 187px;
     }
 }
