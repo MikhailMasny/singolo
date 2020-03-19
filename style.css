@@ -689,7 +689,7 @@ body {
 @media screen and (max-width: 768px) {
     
     .carousel__item {
-        height: 458px;
+        height: 423px;
     }
 
     .carousel__wrapper {
@@ -697,40 +697,51 @@ body {
     }
 
     .carousel__element {
-        top: 242px;
+        top: 215px;
+    }
+
+    .carousel__element-left {
+        left: -10px;
+    }
+
+    .carousel__element-right {
+        right: -14px;
     }
 
     .mobile__vertical-shadow {
-        width: 201px;
-        left: 45px;
+        width: 181px;
+        left: 44px;
+        top: 41px;
     }
 
     .mobile__vertical-body {
-        top: 53px;
+        top: 40px;
         left: 45px;
-        width: 180px;
+        width: 163px;
     }
 
     .mobile__vertical-display {
-        width: 157px;
-        top: 107px;
-        left: 57px;
+        width: 141px;
+        top: 90px;
+        left: 55px;
     }
 
     .mobile__horizontal-shadow {
         width: 366px;
-        right: 45px;
+        right: 42px;
+        top: 133px;
     }
 
     .mobile__horizontal-body {
         width: 344px;
-        right: 45px;
+        right: 64px;
+        top: 134px;
     }
 
     .mobile__horizontal-display {
         width: 250px;
-        top: 184px;
-        right: 94px;
+        top: 143px;
+        right: 113px;
     }
 
     .mobile__slide-another {
@@ -769,7 +780,7 @@ body {
     }
 
     .portfolio__pictures {
-        height: 868px;
+        height: 580px;
     }
 
     .portfolio__item { 
@@ -823,6 +834,7 @@ body {
     .mobile__vertical-shadow {
         width: 90px;
         left: 21px;
+        top: 52px;
     }
 
     .mobile__vertical-body {
