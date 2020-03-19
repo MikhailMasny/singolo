@@ -159,3 +159,22 @@ function handlerMobileV() {
 function handlerMobileH() {
     MOBILE_H_DISPLAY.classList.toggle("carousel__display-hidden");
 }
+
+/* Task: Mobile menu */
+
+const MOBILE_MENU = document.querySelector(".menu");
+const MOBILE_MENU_OPEN = document.querySelector(".header__menu");
+const MOBILE_MENU_CLOSE = document.querySelector(".menu__icon");
+const MOBILE_MENU_OVERLAY = document.querySelector(".menu__overlay");
+
+MOBILE_MENU_OPEN.addEventListener("click", handlerMobileMenuOpen);
+MOBILE_MENU_CLOSE.addEventListener("click", handlerMobileMenuClose);
+MOBILE_MENU_OVERLAY.addEventListener("click", handlerMobileMenuClose);
+
+function handlerMobileMenuOpen() {
+    MOBILE_MENU.classList.toggle("menu-hidden");
+}
+
+function handlerMobileMenuClose() {
+    MOBILE_MENU.classList.toggle("menu-hidden");
+}
