@@ -25,6 +25,10 @@ body {
 /* HEADER */
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
     background-color: #2d303a;
     border-bottom: solid 6px #323746;
 }
@@ -116,6 +120,7 @@ body {
 .carousel__wrapper {
     position: relative;
     padding-bottom: 55px;
+    margin-top: 96px;
 }
 
 .carousel__item {
