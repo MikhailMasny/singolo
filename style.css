@@ -592,12 +592,16 @@ body {
 }
 
 .contact__button {
-    padding: 7px 14px;
+    padding: 11px 49px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: #f48c8f;
-    background-color: #d6564f;
+    color: #886A30;
+    background-color: #FBC65F;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
 }
 
 .contact__button:hover {
@@ -650,7 +654,7 @@ body {
 
 .footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; 
 }
 
@@ -894,6 +898,10 @@ body {
     .about-us__employee,
     .about-us__photo {
         width: 314px;
+    }
+
+    .contact__button {
+        width: 100%;
     }
 
     .contact__action,
